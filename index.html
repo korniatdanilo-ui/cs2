@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./img/cs.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Skins</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" id="cart-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 64 64" role="img" aria-label="Shopping basket">
+          <title>Shopping basket</title>
+          <path fill="white" fill-rule="evenodd" d="
+            M10 22h44l-4 26c-0.5 4-3 6-6 6H20c-3 0-5.5-2-6-6l-4-26Z
+            M18 28h4v16h-4z
+            M26 28h4v16h-4z
+            M34 28h4v16h-4z
+            M42 28h4v16h-4z">
+          </path>
+          <path fill="white" d="M18 22L26 6h4l-8 16Z"></path>
+          <path fill="white" d="M46 22L38 6h-4l8 16Z"></path>
+        </svg>
+
+      </div>
+    </header>
+    <main>
+        <aside class="cart-modal">
+            <h2>Ваші товари</h2>
+            <p>Сумма: <span class="cart-total"></span></p>
+
+            <div class="cart-buttons">
+                <button id="btn-clear" class="sell-btn">Очистити кошик</button>
+                <button id="btn-buy" class="buy-btn">Оформити замовлення</button>
+            </div>
+        </aside>
+        <section class="hero">
+            <h1>Welcome to Our Website</h1>
+            <p>Our online store fosr all your skins</p>
+           
+        </section>
+        <section class="features">
+            <div class="feature">
+                <h2>Feature One</h2>
+                <p>Skins</p>
+            </div>
+            <div class="filter-buttons">
+                <button data-filter="all" class="filter-btn">Усе</button>
+                <button data-filter="knife" class="filter-btn">Ножи</button>
+                <button data-filter="rifles" class="filter-btn active">Винтовки</button>
+                <button data-filter="sniper" class="filter-btn">Снайперські винтовки</button>
+                <button data-filter="gloves" class="filter-btn">Рукавиці</button>
+            </div>
+            <div class="cards">
+                <div data-category="rifles" class="card">
+                    <img src="./img/кровавий спорт.png" alt="Card Image">
+                    <h3>AK-47 | Bloodsport</h3>
+                    <p>The AK-47 | Bloodsport is a popular, Covert-tier rifle skin in Counter-Strike (CS:GO/CS2), introduced in 2017's Spectrum Case.</p>
+                    <button class="buy-button">Buy Now</button>
+                    <p class="card-price">$6666</p>
+                </div>
+                <div data-category="sniper" class="card">
+                    <img src="./img/awp.webp" alt="Card Image">
+                    <h3>AWP | Dragon Lore</h3>
+                    <p>The AWP | Dragon Lore is a popular, Covert-tier rifle skin in Counter-Strike (CS:GO/CS2), introduced in 2017's Spectrum Case.</p>
+                    <button class="buy-button">Buy Now</button>
+                    <p class="card-price">$6666</p>
+                </div>
+                <div data-category="sniper" class="card">
+                    <img src="./img/awp2.webp" alt="Card Image">
+                    <h3>AWP | Printstream</h3>
+                    <p>The AWP | Printstream is a popular, Covert-tier rifle skin in Counter-Strike (CS:GO/CS2), introduced in 2017's Spectrum Case.</p>
+                    <button class="buy-button">Buy Now</button>
+                    <p class="card-price">$6666</p>
+                </div>
+                <div data-category="sniper"  class="card">
+                    <img src="./img/awp3.webp" alt="Card Image">
+                    <h3>AWP | Duality</h3>
+                    <p>The AWP | Duality is a popular, Covert-tier rifle skin in Counter-Strike (CS:GO/CS2), introduced in 2017's Spectrum Case.</p>
+                    <button class="buy-button">Buy Now</button>
+                    <p class="card-price">$6666</p>
+                </div>
+                <div data-category="knife" class="card">
+                    <img src="./img/aaa.webp" alt="Card Image">
+                    <h3>Butterfly Knife | Doppler</h3>
+                    <p>The Butterfly Knife | Doppler is a popular, Class-A tier knife skin in Counter-Strike (CS:GO/CS2), introduced in 2017's Spectrum Case.</p>
+                    <button class="buy-button">Buy Now</button>
+                    <p class="card-price">$6666</p>
+                </div>
+                <div data-category="gloves" class="card">
+                    <img src="./img/gg.png" alt="Card Image">
+                    <h3> Specialist Gloves | Crimson Kimono</h3>
+                    <p>The Specialist Gloves | Crimson Kimono is a popular, Class-A tier glove skin in Counter-Strike (CS:GO/CS2), introduced in 2017's Spectrum Case.</p>
+                    <button class="buy-button">Buy Now</button>
+                    <p class="card-price">$6666</p>
+                </div>
+                <div data-category="rifles" class="card">
+                    <img src="./img/fff.webp" alt="Card Image">
+                    <h3>M4A1-S | Printstream</h3>
+                    <p>The M4A1-S | Printstream is a popular, Class-A tier rifle skin in Counter-Strike (CS:GO/CS2), introduced in 2017's Spectrum Case.</p>
+                    <button class="buy-button">Buy Now</button>
+                    <p class="card-price">$6666</p>
+                </div>
+                <div data-category="knife" class="card">
+                    <img src="./img/вв.webp" alt="Card Image">
+                    <h3> Skeleton Knife | Damascus Steel</h3>
+                    <p>The Skeleton Knife | Damascus Steel is a popular, Class-A tier knife skin in Counter-Strike (CS:GO/CS2), introduced in 2017's Spectrum Case.</p>
+                    <button class="buy-button">Buy Now</button>
+                    <p class="card-price">$6666</p> 
+                </div>
+                <div data-category="gloves" class="card">
+                    <img src="./img/уу.webp" alt="Card Image">
+                    <h3>Driver Gloves | Snow Leopard</h3>
+                    <p>The Driver Gloves | Snow Leopard is a popular, Class-A tier glove skin in Counter-Strike (CS:GO/CS2), introduced in 2017's Spectrum Case.</p>
+                    <button class="buy-button">Buy Now</button>   
+                    <p class="card-price">$6666</p>      
+                </div>
+
+            </div>
+
+            <p class="contact-info">if you have any questions, please call +666 666 666</p>
+            <script src="script.js"></script>
+</body>
+</html>

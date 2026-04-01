@@ -3,6 +3,7 @@ const cards = document.querySelectorAll(".card")
 
 buttons.forEach(button => {
     button.addEventListener('click', () => {
+      const cards = document.querySelectorAll(".card")
         buttons.forEach(btn => btn.classList.remove('active'));
         button.classList.add('active')
         

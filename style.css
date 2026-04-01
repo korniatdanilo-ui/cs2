@@ -134,3 +134,7 @@ main{
     margin-top: 10px;
 }
 
+.cart-items li{
+    list-style: none;
+}
+

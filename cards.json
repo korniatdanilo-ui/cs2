@@ -1,0 +1,79 @@
+[
+  {
+    "category": "rifles",
+    "img": "./img/кровавий спорт.png",
+    "name": "AK-47 | Bloodsport",
+    "description": "The AK-47 | Bloodsport is a popular, Covert-tier rifle skin in Counter-Strike (CS:GO/CS2), introduced in 2017's Spectrum Case.",
+    "price": 6666
+  },
+  {
+    "category": "sniper",
+    "img": "./img/awp.webp",
+    "name": "AWP | Dragon Lore",
+    "description": "The AWP | Dragon Lore is a popular, Covert-tier rifle skin in Counter-Strike (CS:GO/CS2), introduced in 2017's Spectrum Case.",
+    "price": 6666
+  },
+  {
+    "category": "sniper",
+    "img": "./img/awp2.webp",
+    "name": "AWP | Printstream",
+    "description": "The AWP | Printstream is a popular, Covert-tier rifle skin in Counter-Strike (CS:GO/CS2), introduced in 2017's Spectrum Case.",
+    "price": 6666
+  },
+  {
+    "category": "sniper",
+    "img": "./img/awp3.webp",
+    "name": "AWP | Duality",
+    "description": "The AWP | Duality is a popular, Covert-tier rifle skin in Counter-Strike (CS:GO/CS2), introduced in 2017's Spectrum Case.",
+    "price": 6666
+  },
+  {
+    "category": "knife",
+    "img": "./img/aaa.webp",
+    "name": "Butterfly Knife | Doppler",
+    "description": "The Butterfly Knife | Doppler is a popular, Class-A tier knife skin in Counter-Strike (CS:GO/CS2), introduced in 2017's Spectrum Case.",
+    "price": 6666
+  },
+  {
+    "category": "gloves",
+    "img": "./img/gg.png",
+    "name": "Specialist Gloves | Crimson Kimono",
+    "description": "The Specialist Gloves | Crimson Kimono is a popular, Class-A tier glove skin in Counter-Strike (CS:GO/CS2), introduced in 2017's Spectrum Case.",
+    "price": 6666
+  },
+  {
+    "category": "rifles",
+    "img": "./img/fff.webp",
+    "name": "M4A1-S | Printstream",
+    "description": "The M4A1-S | Printstream is a popular, Class-A tier rifle skin in Counter-Strike (CS:GO/CS2), introduced in 2017's Spectrum Case.",
+    "price": 6666
+  },
+  {
+    "category": "knife",
+    "img": "./img/вв.webp",
+    "name": "Skeleton Knife | Damascus Steel",
+    "description": "The Skeleton Knife | Damascus Steel is a popular, Class-A tier knife skin in Counter-Strike (CS:GO/CS2), introduced in 2017's Spectrum Case.",
+    "price": 6666
+  },
+  {
+    "category": "gloves",
+    "img": "./img/уу.webp",
+    "name": "Driver Gloves | Snow Leopard",
+    "description": "The Driver Gloves | Snow Leopard is a popular, Class-A tier glove skin in Counter-Strike (CS:GO/CS2), introduced in 2017's Spectrum Case.",
+    "price": 6666
+  },
+  {
+    "category": "rifles",
+    "img" : "./img/de.webp",
+    "name": "Desert Eagle ",
+    "description": "The Desert Eagle | Printstream is a popular, Class-A tier pistol skin in Counter-Strike (CS:GO/CS2), introduced in 2017's Spectrum Case.",
+    "price": 3333
+  },
+    {
+    "category": "rifles",
+    "img" : "./img/de2.webp",
+    "name": "Desert Eagle 2",
+    "description": "The Desert Eagle | Printstream is a popular, Class-A tier pistol skin in Counter-Strike (CS:GO/CS2), introduced in 2017's Spectrum Case.",
+    "price": 3333
+  }
+]

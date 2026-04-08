@@ -156,3 +156,17 @@ header{
     text-align: left;
     display: block;
 }
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -157,16 +157,12 @@ header{
     display: block;
 }
 
-@media (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-        align-items: center;
+@media screen and (max-width: 960px) {
+    .card{
+        width: 100%;
     }
-    .card {
-        width: 80%;
+    ul li a {
+        font-size: 14px;
+        margin-left: 8px;
     }
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+}   

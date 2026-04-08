@@ -64,16 +64,16 @@
   },
   {
     "category": "rifles",
-    "img" : "./img/de.webp",
-    "name": "Desert Eagle ",
+    "img" : "./img/67.webp",
+    "name": "The Desert Eagle | Printstream",
     "description": "The Desert Eagle | Printstream is a popular, Class-A tier pistol skin in Counter-Strike (CS:GO/CS2), introduced in 2017's Spectrum Case.",
     "price": 3333
   },
     {
     "category": "rifles",
-    "img" : "./img/de2.webp",
-    "name": "Desert Eagle 2",
-    "description": "The Desert Eagle | Printstream is a popular, Class-A tier pistol skin in Counter-Strike (CS:GO/CS2), introduced in 2017's Spectrum Case.",
+    "img" : "./img/6767.webp",
+    "name": "Desert Eagle | Serpent Strike",
+    "description": "The Desert Eagle | Serpent Strike is a popular Classified-grade pistol skin in CS2, released on April 1, 2025, in the Fever Case. ",
     "price": 3333
   }
 ]

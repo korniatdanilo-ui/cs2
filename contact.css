@@ -1,0 +1,106 @@
+.contact-hero {
+            background-image: url("img/cs2.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 40vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .contact-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .contact-form {
+            background-color: white;
+            max-width: 550px;
+            margin: 0 auto;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: orange;
+            outline: none;
+        }
+
+        .contact-form textarea {
+            height: 130px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            background-color: orangered;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Bungee', cursive;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        .contact-form button:hover {
+            background-color: darkorange;
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+        }
+
+        .contact-detail-card {
+            background-color: white;
+            padding: 30px 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 200px;
+            text-align: center;
+        }
+
+        .contact-detail-card h3 {
+            margin: 0 0 10px 0;
+            font-size: 1rem;
+            color: orangered;
+        }
+
+        .contact-detail-card p {
+            font-family: Arial, sans-serif;
+            font-size: 0.9rem;
+            color: #333;
+            margin: 0;
+        }

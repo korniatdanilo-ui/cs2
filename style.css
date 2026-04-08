@@ -146,3 +146,13 @@ header{
     z-index: 100;
     background-color: orange;
 }
+
+.btn-close {
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: left;
+    display: block;
+}

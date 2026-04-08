@@ -115,3 +115,12 @@ function updateCartTotal() {
     });
   });
 }
+
+try{
+  const closeBtn = document.querySelector(".btn-close");
+  closeBtn.addEventListener("click", () => {
+      cartModal.classList.remove("active")
+  })
+}catch (error) {
+  console.error("Close button not found:", error);
+}

@@ -1,23 +1,36 @@
-const buttons = document.querySelectorAll(".filter-btn")
-const cards = document.querySelectorAll(".card")
+try {
+  const loadWrapper = document.querySelector(".loading-wrapper");
 
-buttons.forEach(button => {
-    button.addEventListener('click', () => {
-      const cards = document.querySelectorAll(".card")
-        buttons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active')
-        
-        
-        const category = button.getAttribute('data-filter')
-        cards.forEach(card => {
-            if(category === 'all' || card.getAttribute('data-category') === category){
-                card.style.display = 'block'
-            }else{ 
-                card.style.display = 'none'
-            }
-        })
-    })
-})
+  setTimeout(() => {
+    loadWrapper.style.opacity = "0";
+    loadWrapper.style.visibility = "hidden";
+  }, 1000);
+} catch (error) {
+  console.error("Loading wrapper not found:", error);
+}
+
+const buttons = document.querySelectorAll(".filter-btn");
+const cards = document.querySelectorAll(".card");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const cards = document.querySelectorAll(".card");
+    buttons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
+
+    const category = button.getAttribute("data-filter");
+    cards.forEach((card) => {
+      if (
+        category === "all" ||
+        card.getAttribute("data-category") === category
+      ) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+});
 
 const cardsContainer = document.querySelector(".cards");
 const cartItems = document.querySelector(".cart-items");
@@ -42,8 +55,8 @@ fetch("./cards.json")
     updateCartTotal();
   });
 
-  const cardsData = localStorage.getItem("cartItems");
-  if (cardsData) {
+const cardsData = localStorage.getItem("cartItems");
+if (cardsData) {
   const cards = JSON.parse(cardsData);
   cartItems.innerHTML = cards.map((item) => `<li>${item}</li>`).join("");
 
@@ -61,29 +74,28 @@ const cartIcon = document.querySelector(".cart-icon");
 const cartModal = document.querySelector(".cart-modal");
 
 cartIcon.addEventListener("click", () => {
-    cartModal.classList.add("active")
-})
+  cartModal.classList.add("active");
+});
 
 function clearCart() {
   cartModal.classList.remove("active");
   document.querySelector(".cart-total").textContent = "";
   document.querySelector(".cart-items").innerHTML = "";
   localStorage.removeItem("cartItems");
-
 }
 document.querySelector("#btn-clear").addEventListener("click", () => {
-    clearCart()
-})  
+  clearCart();
+});
 document.querySelector("#btn-buy").addEventListener("click", () => {
-    cartModal.classList.remove("active")
-    const total = document.querySelector(".cart-total")
-    if (total.textContent > 0) {
-        alert("Дякуємо за покупку!")
-        clearCart()
-    }else {
-        alert("Ваш кошик порожній!")
-    }
-})
+  cartModal.classList.remove("active");
+  const total = document.querySelector(".cart-total");
+  if (total.textContent > 0) {
+    alert("Дякуємо за покупку!");
+    clearCart();
+  } else {
+    alert("Ваш кошик порожній!");
+  }
+});
 
 function updateCartTotal() {
   const buyButtons = document.querySelectorAll(".buy-button");
@@ -100,7 +112,7 @@ function updateCartTotal() {
       cartItems.appendChild(document.createElement("li")).textContent =
         `${name} - $${price}`;
 
-        const cartItemsData = localStorage.getItem("cartItems");
+      const cartItemsData = localStorage.getItem("cartItems");
       localStorage.setItem(
         "cartItems",
         JSON.stringify([
@@ -116,11 +128,11 @@ function updateCartTotal() {
   });
 }
 
-try{
+try {
   const closeBtn = document.querySelector(".btn-close");
   closeBtn.addEventListener("click", () => {
-      cartModal.classList.remove("active")
-  })
-}catch (error) {
+    cartModal.classList.remove("active");
+  });
+} catch (error) {
   console.error("Close button not found:", error);
 }
